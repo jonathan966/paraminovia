@@ -1,0 +1,66 @@
+/* Default styles for the sunflower container and the text phrase */
+body {
+	background-image: url('paisaje.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.sunflower-container {
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.sunflower {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-image: url('girasoles.png');
+    background-size: cover;
+    animation: move-sunflower 10s infinite linear;
+}
+
+.phrase {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+  .sunflower {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .phrase {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for even smaller screens */
+  .sunflower {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .phrase {
+    font-size: 24px;
+    top: 50%;
+  }
+}

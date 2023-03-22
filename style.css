@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sunflower-bouquet {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.sunflower {
+	width: 100px;
+	height: 100px;
+	background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.admagazine.com%2Farticulos%2Fpropiedades-medicinales-del-girasol&psig=AOvVaw1UNk5jF8AqWLrYrO2YdoYb&ust=1679536776933000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCq0Zm47v0CFQAAAAAdAAAAABAD');
+	background-size: cover;
+	margin: 10px;
+}
+
+.phrase {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 50px;
+}
